@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -23,4 +24,92 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+[class^="inter-"] {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+.inter-thin { font-weight: 100; }
+.inter-extralight { font-weight: 200; }
+.inter-light { font-weight: 300; }
+.inter-regular { font-weight: 400; }
+.inter-medium { font-weight: 500; }
+.inter-semibold { font-weight: 600; }
+.inter-bold { font-weight: 700; }
+.inter-extrabold { font-weight: 800; }
+.inter-black { font-weight: 900; }
+
+[class^="poppins-"] {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.poppins-thin { font-weight: 100; }
+.poppins-extralight { font-weight: 200; }
+.poppins-light { font-weight: 300; }
+.poppins-regular { font-weight: 400; }
+.poppins-medium { font-weight: 500; }
+.poppins-semibold { font-weight: 600; }
+.poppins-bold { font-weight: 700; }
+.poppins-extrabold { font-weight: 800; }
+.poppins-black { font-weight: 900; }
+
+[class^="raleway-"] {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.raleway-thin { font-weight: 100; }
+.raleway-extralight { font-weight: 200; }
+.raleway-light { font-weight: 300; }
+.raleway-regular { font-weight: 400; }
+.raleway-medium { font-weight: 500; }
+.raleway-semibold { font-weight: 600; }
+.raleway-bold { font-weight: 700; }
+.raleway-extrabold { font-weight: 800; }
+.raleway-black { font-weight: 900; }
+
+
+.wallet-btn {
+  cursor: pointer;
+  transform: translateY(1.25rem); /* translate-y-5 */
+  background-color: #252432; /* bg-[#252432] */
+  color: #ffffff; /* text-white */
+  text-align: center; /* text-center */
+  font-family: "Raleway", sans-serif; /* raleway-medium */
+  font-weight: 500;
+  border-radius: 0.75rem; /* rounded-xl */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  letter-spacing: -0.015em; /* tracking-tight */
+  transition: transform 150ms ease, background-color 150ms ease; /* transition-transform duration-150 */
+}
+
+/* hover:bg-gray-700 */
+.wallet-btn:hover {
+  background-color: #374151;
+}
+
+/* active:scale-95 */
+.wallet-btn:active {
+  transform: translateY(1.25rem) scale(0.95);
+}
+
+/* Responsive adjustments (width>768) */
+@media (min-width: 768px) {
+  .wallet-btn {
+    width: 211px;
+    height: 55px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .wallet-btn {
+    width: 135px;
+    height: 38px;
+    font-size: 11px;
+  }
 }
