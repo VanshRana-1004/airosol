@@ -161,6 +161,7 @@ export default function Tokens(){
                             setSendTokenForm(true);
                             mintAddressRef.current = new PublicKey(token.mint);
                             typeRef.current=token.programType;
+                            window.scrollTo({ top: 0, behavior: "smooth" });
                         }} className="p-1.5 rounded-full hover:bg-zinc-300 cursor-pointer "><SendIcon color="#3F3F46" size="28px"/></div>                        
                     </div>
                 ))}
