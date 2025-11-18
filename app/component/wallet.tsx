@@ -169,7 +169,7 @@ export default function Wallet(){
         }
     }
 
-    return <div className={`flex flex-col w-full h-auto bg-white ${width>768 ? 'px-16 gap-5' : 'px-5 gap-3'} `}>
+    return <div className={`flex flex-col w-full min-h-screen h-auto bg-white ${width>768 ? 'px-16 gap-5' : 'px-5 gap-3'} `}>
         <Toaster/>
         {authenticated && sendSolForm &&
             <div className={`z-50 p-[1.5px] rounded-lg absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ${width>=470 ? 'w-[465px]' : 'w-[95%]'} bg-[radial-gradient(circle_at_top_left,_#41F8B0_35%,_#C2ADF8_100%)] h-auto shadow-md`}>

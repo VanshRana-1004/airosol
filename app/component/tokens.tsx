@@ -151,7 +151,7 @@ export default function Tokens(){
                 {tokens.map((token,ind)=>(
                     <div key={token.mint} className="p-5 px-7 rounded-lg border-2 border-zinc-200 backdrop-blur-2xl bg-zinc-50 shadow-md  flex items-center justify-between">
                         <div className="flex items-center gap-7">
-                            {token.image ? <img src={token.image} alt={token.name} className="w-14 h-14 rounded-full border border-zinc-300" /> : <div className="w-14 h-14 bg-gray-200 rounded-full border border-zinc-300" />}
+                            {token.image ? <img src={token.image} alt={token.name} className="w-13 h-13 object-cover object-center rounded-full border border-zinc-300" /> : <div className="w-13 h-13 object-cover object-center bg-gray-200 rounded-full border border-zinc-300" />}
                             <div className="flex flex-col">
                                 <span className="poppins-semibold text-[17px] tracking-tight text-zinc-800">{token.name}</span>
                                 <span className="poppins-medium text-[16px] tracking-tight text-zinc-800">{token.balance ? `${token.balance} - ${token.symbol}` : ''}</span>
